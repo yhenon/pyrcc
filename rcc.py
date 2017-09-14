@@ -54,6 +54,8 @@ class rcc_cluster():
 
     def mkNN(self, X, k, measure='euclidean'):
         """
+        This code is taken from:
+        https://bitbucket.org/sohilas/robust-continuous-clustering/src/
         Construct mutual_kNN for large scale dataset
 
         If j is one of i's closest neighbors and i is also one of j's closest members,

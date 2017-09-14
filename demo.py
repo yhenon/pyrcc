@@ -16,7 +16,7 @@ with open('pendigits.txt', 'r') as f:
 
 X = np.array(X).astype(np.float32)
 Y = np.array(Y)
-clusterer = rcc.rcc_cluster()
+clusterer = rcc.rcc_cluster(measure='cosine')
 P = clusterer.fit(X)
 P = clusterer.labels_
 print('AMI: {}'.format(adjusted_mutual_info_score(Y, P)))
